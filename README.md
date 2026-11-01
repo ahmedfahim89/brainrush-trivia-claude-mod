@@ -5,7 +5,16 @@
 - **In Claude Code** (terminal and the desktop app's Code tab): a band above the prompt shows questions while Claude is working, so the wait is a quiz instead of idle time.
 - **In Chat and Cowork** (claude.ai, the desktop app, mobile): the BrainRush Trivia connector. Ask Claude for BrainRush trivia and a multiple-choice card opens in the conversation.
 
-## What it looks like
+## Claude Code: the band above the prompt
+
+- The band appears while a turn runs (subagents inside the turn included) and hides when Claude is done.
+- Click the band (or press ctrl+x tab), then **1** Reveal / **2** Skip; after revealing, **1** Got it / **2** Missed.
+- Questions come live from the BrainRush site's public API (text questions only). Questions you have seen are sent back so they don't repeat. Your score and seen list stay on your machine.
+- `/trivia` shows your score; `/trivia off`, `/trivia on`, `/trivia reset`.
+
+Needs a recent Claude Code and internet access to the BrainRush site.
+
+**What it looks like
 
 **Claude Code desktop app (Code tab): the band above the prompt box.** While Claude is thinking or working, a question shows just above the prompt box, with **Reveal** (1) and **Skip** (2). After revealing, **Got it** (1) or **Missed** (2) scores it.
 
@@ -15,18 +24,6 @@
 
 ![The BrainRush band in the Claude Code terminal while Claude is working: a Cartoons & Childhood question for 200 points with Reveal and Skip buttons, and Score 1/1](docs/screenshots/cli-band.webp)
 
-**Chat: the trivia card.** Ask for a trivia game and Claude opens the card in the conversation. Tap an answer (or press 1 to 3) to see right or wrong; your score is at the top right.
-
-![The BrainRush trivia card in a Claude chat: a Geography question for 300 points with three answer buttons, Canada, China and Russia, and Score 0/0](docs/screenshots/chat-card.png)
-
-## Claude Code: the band above the prompt
-
-- The band appears while a turn runs (subagents inside the turn included) and hides when Claude is done.
-- Click the band (or press ctrl+x tab), then **1** Reveal / **2** Skip; after revealing, **1** Got it / **2** Missed.
-- Questions come live from the BrainRush site's public API (text questions only). Questions you have seen are sent back so they don't repeat. Your score and seen list stay on your machine.
-- `/trivia` shows your score; `/trivia off`, `/trivia on`, `/trivia reset`.
-
-Needs a recent Claude Code and internet access to the BrainRush site.
 
 ## Chat and Cowork: the trivia card
 
@@ -37,6 +34,12 @@ The plugin includes the BrainRush Trivia connector (`https://brainrush.integrati
 - The card opens when you ask for it. Chat and Cowork have no place for a band while Claude works, so that part is Claude Code only.
 
 In Claude Code the connector loads too, but Claude Code shows no cards: asking for trivia there gets a short text reply. The band is the Claude Code experience.
+
+**What it looks like
+
+**Chat: the trivia card.** Ask for a trivia game and Claude opens the card in the conversation. Tap an answer (or press 1 to 3) to see right or wrong; your score is at the top right.
+
+![The BrainRush trivia card in a Claude chat: a Geography question for 300 points with three answer buttons, Canada, China and Russia, and Score 0/0](docs/screenshots/chat-card.png)
 
 ## Does it use tokens?
 
