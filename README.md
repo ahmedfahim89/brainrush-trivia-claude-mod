@@ -5,6 +5,8 @@
 - **In Claude Code** (terminal and the desktop app's Code tab): a band above the prompt shows questions while Claude is working, so the wait is a quiz instead of idle time.
 - **In Chat and Cowork** (claude.ai, the desktop app, mobile): the BrainRush Trivia connector. Ask Claude for BrainRush trivia and a multiple-choice card opens in the conversation.
 
+The same connector also works in [ChatGPT](#chatgpt).
+
 ## Claude Code: the band above the prompt
 
 - The band appears while a turn runs (subagents inside the turn included) and hides when Claude is done.
@@ -100,13 +102,29 @@ claude plugin install brainrush-trivia --marketplace ahmedfahim89/brainrush-triv
 
 In the desktop app's Code tab, where `/plugin` does not run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `ahmedfahim89/brainrush-trivia-claude-mod`, then **Add plugin**.
 
+## ChatGPT
+
+The connector is a standard MCP server with an MCP Apps card, so ChatGPT shows the same card. The plugin in this repository is for Claude only; in ChatGPT you add just the connector by its URL.
+
+1. Go to [chatgpt.com/plugins](https://chatgpt.com/plugins), click **+**, then **Add custom MCP server**.
+2. Name it `BrainRush Trivia` and enter the URL `https://brainrush.integration.ninja/api/mcp.php`.
+3. Choose no authentication, review the warning and confirm, then **Create as a plugin**.
+
+On a Business or Enterprise workspace, an admin may have to allow custom MCP servers first.
+
+**Play:** pick BrainRush Trivia in the composer (type `@`) and ask "Let's play a game". The card follows ChatGPT's light or dark theme. ChatGPT may show a "CSP off" label above the card for a custom server; the card works the same.
+
+![The BrainRush trivia card in ChatGPT in dark mode: a Landmarks question with a photo of the Colosseum and three answer buttons, Score 25/29](docs/screenshots/chatgpt-card.png)
+
+As in Claude, opening the card costs a few tokens; the questions and answers are not in the tool result.
+
 ## Develop
 
 `claude plugin validate .` and `claude plugin test .` check the mod; the code is `hooks/register.tsx`. The connector points at `.mcp.json`; its server and card live in the BrainRush repository (`api/mcp.php`, `mcp/trivia-card.html`).
 
 ## Privacy
 
-The plugin and the connector need no account and save nothing about you on the BrainRush server. Details: [BrainRush privacy policy](https://brainrush.integration.ninja/privacy.html#claude).
+The plugin and the connector (in Claude or ChatGPT) need no account and save nothing about you on the BrainRush server. Details: [BrainRush privacy policy](https://brainrush.integration.ninja/privacy.html#claude).
 
 ## License
 
