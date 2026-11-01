@@ -7,10 +7,6 @@
 
 ## What it looks like
 
-**Chat: the trivia card.** Ask for a trivia game and Claude opens the card in the conversation. Tap an answer (or press 1 to 3) to see right or wrong; your score is at the top right.
-
-![The BrainRush trivia card in a Claude chat: a Geography question for 300 points with three answer buttons, Canada, China and Russia, and Score 0/0](docs/screenshots/chat-card.png)
-
 **Claude Code desktop app (Code tab): the band above the prompt box.** While Claude is thinking or working, a question shows just above the prompt box, with **Reveal** (1) and **Skip** (2). After revealing, **Got it** (1) or **Missed** (2) scores it.
 
 ![The BrainRush band in the Claude Code desktop app above the prompt box: a Science question for 500 points with Reveal 1 and Skip 2 buttons, and Score 29/33](docs/screenshots/desktop-band.jpg)
@@ -18,6 +14,10 @@
 **Claude Code in the terminal: the band above the prompt.** While Claude works, a question shows just above the prompt. Click the band (or press ctrl+x tab), then **1** Reveal or **2** Skip. `[-]` folds the band away.
 
 ![The BrainRush band in the Claude Code terminal while Claude is working: a Cartoons & Childhood question for 200 points with Reveal and Skip buttons, and Score 1/1](docs/screenshots/cli-band.webp)
+
+**Chat: the trivia card.** Ask for a trivia game and Claude opens the card in the conversation. Tap an answer (or press 1 to 3) to see right or wrong; your score is at the top right.
+
+![The BrainRush trivia card in a Claude chat: a Geography question for 300 points with three answer buttons, Canada, China and Russia, and Score 0/0](docs/screenshots/chat-card.png)
 
 ## Claude Code: the band above the prompt
 
