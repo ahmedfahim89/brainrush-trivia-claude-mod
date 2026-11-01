@@ -14,7 +14,7 @@
 
 Needs a recent Claude Code and internet access to the BrainRush site.
 
-**What it looks like
+**What it looks like**
 
 **Claude Code desktop app (Code tab): the band above the prompt box.** While Claude is thinking or working, a question shows just above the prompt box, with **Reveal** (1) and **Skip** (2). After revealing, **Got it** (1) or **Missed** (2) scores it.
 
@@ -35,7 +35,7 @@ The plugin includes the BrainRush Trivia connector (`https://brainrush.integrati
 
 In Claude Code the connector loads too, but Claude Code shows no cards: asking for trivia there gets a short text reply. The band is the Claude Code experience.
 
-**What it looks like
+**What it looks like**
 
 **Chat: the trivia card.** Ask for a trivia game and Claude opens the card in the conversation. Tap an answer (or press 1 to 3) to see right or wrong; your score is at the top right.
 
