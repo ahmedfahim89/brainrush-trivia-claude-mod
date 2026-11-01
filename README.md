@@ -38,13 +38,34 @@ The mod never calls the model, never writes into the conversation, and doesn't c
 
 ## Install
 
-**Chat and Cowork** (claude.ai or the desktop app):
+**Chat and Cowork** (claude.ai or the desktop app): use one of the two ways below, not both, or you get the same tools twice.
+
+*Option A: install the plugin* (the connector, plus the band in Claude Code through plugin sync):
 
 1. Go to **Customize > Plugins > Add > Add marketplace** and enter `ahmedfahim89/brainrush-trivia-claude-mod`.
 2. Install **BrainRush Trivia**.
 3. Open the plugin's **Connectors** tab and connect **brainrush-trivia**.
 
 On Team and Enterprise plans an Owner may have to make the plugin or the connector available first. A plugin installed on your account also reaches Claude Code as a synced plugin at the next session start.
+
+*Option B: add only the connector by its URL* (Chat and Cowork only, no plugin):
+
+On a Free, Pro, Max or Ultra plan:
+
+1. Go to **Customize > Connectors**.
+2. Click **Add custom connector**.
+3. Name it `BrainRush Trivia` and enter the URL `https://brainrush.integration.ninja/api/mcp.php`.
+4. The server needs no sign-in: leave the OAuth fields under **Advanced settings** empty, or choose **No sign-in** if the dialog asks how people authenticate.
+5. Click **Add**.
+
+The Free plan allows one custom connector.
+
+On a Team or Enterprise plan, members can't add a custom connector themselves:
+
+1. An Owner goes to **Organization settings > Connectors**, selects **Add**, then **Custom** (type **Web** if asked), enters the URL above, chooses no sign-in, and clicks **Add**.
+2. Each member then goes to **Customize > Connectors**, finds **BrainRush Trivia** with the **Custom** label, and clicks **Connect**.
+
+**Play:** in a chat, click **+**, select **Connectors** and check that BrainRush Trivia is on. Then ask "Let's play BrainRush trivia". The first time, Claude asks to show the card: choose **Allow** (or **Always allow**). To remove it later, go to **Customize > Connectors** and click **Remove**.
 
 **Claude Code**, at the prompt of a terminal session:
 
