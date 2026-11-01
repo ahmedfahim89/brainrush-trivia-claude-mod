@@ -104,6 +104,10 @@ In the desktop app's Code tab, where `/plugin` does not run: click **+** next to
 
 `claude plugin validate .` and `claude plugin test .` check the mod; the code is `hooks/register.tsx`. The connector points at `.mcp.json`; its server and card live in the BrainRush repository (`api/mcp.php`, `mcp/trivia-card.html`).
 
+## Privacy
+
+The plugin and the connector need no account and save nothing about you on the BrainRush server. Details: [BrainRush privacy policy](https://brainrush.integration.ninja/privacy.html#claude).
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
