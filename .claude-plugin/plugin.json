@@ -4,5 +4,7 @@
   "version": "0.2.0",
   "description": "BrainRush trivia while you wait: a band above the prompt while Claude Code works, and a multiple-choice trivia card in Chat and Cowork",
   "author": { "name": "Ahmed Fahim" },
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "types": "./types/index.d.ts"
 }
