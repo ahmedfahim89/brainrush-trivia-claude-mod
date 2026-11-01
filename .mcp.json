@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "brainrush-trivia": {
+      "type": "http",
+      "url": "https://brainrush.integration.ninja/api/mcp.php"
+    }
+  }
+}

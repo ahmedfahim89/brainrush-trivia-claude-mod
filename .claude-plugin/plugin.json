@@ -1,7 +1,8 @@
 {
   "name": "brainrush-trivia",
-  "version": "0.1.0",
-  "description": "BrainRush trivia questions above the prompt while Claude works",
+  "displayName": "BrainRush Trivia",
+  "version": "0.2.0",
+  "description": "BrainRush trivia while you wait: a band above the prompt while Claude Code works, and a multiple-choice trivia card in Chat and Cowork",
   "author": { "name": "Ahmed Fahim" },
   "types": "./types/index.d.ts"
 }

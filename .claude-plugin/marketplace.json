@@ -1,6 +1,6 @@
 {
   "name": "brainrush-trivia-claude-mod",
-  "description": "BrainRush trivia questions above the prompt while Claude works",
+  "description": "BrainRush trivia while you wait, in Claude Code, Chat and Cowork",
   "owner": { "name": "Ahmed Fahim" },
   "plugins": [{ "name": "brainrush-trivia", "source": "./" }]
 }
